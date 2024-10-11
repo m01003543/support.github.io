@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        header {
+            background-color: #4267B2;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 1.8rem;
+        }
+
+        .hero {
+            background-color: #e9ebee;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #4267B2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .hero .contact-number {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero .contact-number a {
+            color: #4267B2;
+            text-decoration: none;
+        }
+
+        .hero .contact-number a:hover {
+            text-decoration: underline;
+        }
+
+        .hero .cta {
+            background-color: #4267B2;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .hero .cta:hover {
+            background-color: #2f468a;
+        }
+
+        .topics {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+
+        .topics h2 {
+            text-align: center;
+            color: #4267B2;
+            margin-bottom: 30px;
+        }
+
+        .topic-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .topic-item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .topic-item h3 {
+            color: #4267B2;
+            margin-bottom: 10px;
+        }
+
+        .topic-item p {
+            color: #333;
+        }
+
+        footer {
+            background-color: #4267B2;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header .logo h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .topics h2 {
+                font-size: 1.8rem;
+            }
+
+            .topic-list {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 1.6rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .topics h2 {
+                font-size: 1.5rem;
+            }
+
+            .topic-item h3 {
+                font-size: 1.2rem;
+            }
+
+            .topic-item p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HV7H75RX14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HV7H75RX14');
+</script>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Facebook Support</h1>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Need Help with Us?</h2>
+            <p>We’re here to assist you with any issues you’re facing.</p>
+            <div class="contact-number">Contact us: <a href="tel:+18152962818">+1 (815) 296-2818</a></div>
+            <a href="tel:+18152962818"><button class="cta">Call Now</button></a>
+        </div>
+    </section>
+
+    <!-- Support Topics Section -->
+    <section id="support-topics" class="topics">
+        <div class="container">
+            <h2>Common Support Topics</h2>
+            <div class="topic-list">
+                <div class="topic-item">
+                    <h3>Account Issues</h3>
+                    <p>Locked out of your account or need help with account recovery?</p>
+                </div>
+                <div class="topic-item">
+                    <h3>Privacy Settings</h3>
+                    <p>Manage who sees your posts and how to protect your account.</p>
+                </div>
+                <div class="topic-item">
+                    <h3>Other Issues</h3>
+                    <p>Learn how to manage, create, or report issues with Us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Support © 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
